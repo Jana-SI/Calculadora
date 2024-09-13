@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/style.css">
+  </head>
+  <body>
+    <div id="container-principal" class="container-fluid">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="card border-light text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header text-end border-secondary">
+                  <div id="displays">
+                    <div id="display-expressao">0</div>
+                    <div id="display-resultado">0</div>
+                  </div>
+                </div>
+        
+                <div class="card-body">
+                  <div class="row mb-3">
+                    <div class="col-3">
+                      <button class="btn btn-outline-warning btn-lg" value="ac">AC</button>
+                    </div>
+                    <div class="col-3">
+                      <button class="btn btn-outline-warning btn-lg" value="ce">CE</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="btn_operadores" class="btn btn-outline-primary btn-lg" value="/">/</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="btn_operadores" class="btn btn-outline-primary btn-lg" value="*">x</button>
+                    </div>
+                  </div>
+        
+                  <div class="row mb-3">
+                    <div class="col-3">
+                      <button id="btn_numeros" class="btn btn-outline-light btn-lg" value="7">7</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="btn_numeros" class="btn btn-outline-light btn-lg" value="8">8</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="btn_numeros" class="btn btn-outline-light btn-lg" value="9">9</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="btn_operadores" class="btn btn-outline-primary btn-lg" value="-">-</button>
+                    </div>
+                  </div>
+        
+                  <div class="row mb-3">
+                    <div class="col-3">
+                      <button id="btn_numeros" class="btn btn-outline-light btn-lg" value="4">4</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="btn_numeros" class="btn btn-outline-light btn-lg" value="5">5</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="btn_numeros" class="btn btn-outline-light btn-lg" value="6">6</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="btn_operadores" class="btn btn-outline-primary btn-lg" value="+">+</button>
+                    </div>
+                  </div>
+        
+                  <div class="row">
+                    <div class="col-9">
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <button id="btn_numeros" class="btn btn-outline-light btn-lg" value="1">1</button>
+                            </div>
+                            <div class="col-4">
+                                <button id="btn_numeros" class="btn btn-outline-light btn-lg" value="2">2</button>
+                            </div>
+                            <div class="col-4">
+                                <button id="btn_numeros" class="btn btn-outline-light btn-lg" value="3">3</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-8">
+                                <button class="btn btn-outline-light btn-lg w-100" value="0">0</button>
+                            </div>
+                            <div class="col-4">
+                                <button id="btn_numeros" class="btn btn-outline-light btn-lg" value=".">.</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-3 d-flex flex-column">
+                        <button class="btn btn-outline-success btn-lg flex-fill mb-3" value="=">=</button>
+                        
+                    </div>
+                </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script src="/scripts/scripts.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
